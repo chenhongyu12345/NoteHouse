@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="北京美团网精选北京美食餐厅，酒店预定，电影票，旅游景点，外卖订餐，北京团购信息，您可查看商家评价店铺信息。北京生活，下载美团官方APP，吃喝玩乐1折起">
+    <title>北京美团网-北京美食_酒店_旅游_团购_电影_吃喝玩乐</title>
+    <link rel="stylesheet" href="./css/js.css">
+    <!-- 基础样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 字体图标样式 -->
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
+    <!-- 头部公共文件样式 -->
+    <link rel="stylesheet" href="./css/com_header.css">
+    <!-- 首页样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 底部公共样式 -->
+    <link rel="stylesheet" href="./css/com_footer.css">
+    <!-- js -->
+    <script src="./js/text.js"></script>
+</head>
+<body>
+    <!-- 头部导航条 -->
+    <div class="nav">
+        <div class="nav-center">
+            <!-- 导航栏左侧 位置登录注册 -->
+            <div class="nav-center-left">
+                <span class="icon-location2"></span>
+                <a href="#">北京</a>
+                <a href="#">切换城市</a>
+                <a href="#">[门头沟区廊坊大厂回族自治县]</a>
+                <a href="#">立即登录</a>
+                <a href="#">注册</a>
+
+            </div>
+            <!-- 导航条右侧 我的美团、手机APP 商家中心、美团规则、网站导航 -->
+            <div class="nav-center-right">
+                <div class="dropdown">
+                    <a href="#">我的美团</a>
+                    <ul>
+                        <li>我的订单</li>
+                        <li>我的收藏</li>
+                        <li>抵用卷</li>
+                        <li>账户设置</li>
+                    </ul>
+                </div>
+                <a href="#">手机APP </a>
+                <a href="#">商家中心</a>
+                <a href="#">美团规则</a>
+                <a href="#">网站导航</a>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索区域 -->
+       <!-- 搜索区域 -->
+       <div class="header">
+        <div class="header-center">
+            <!-- logo区域 -->
+            <div class="header-center-left">
+                <h1>
+                    <a href="index.html" title="美团购">
+                        <img src="./images/logo.png" alt="">美团购
+                    </a>
+                </h1>
+            </div>
+            <!-- 搜索区域-->
+            <div class="header-center-center">
+                <input type="text" placeholder="搜索商家或地点">
+                <button>
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 主体区域 -->
+    <div class="bodyer">
+        <div class="bodyer-center">
+            <!-- 全部分类 -->
+            <div class="bodyer-center-left">
+                <span>全部分类</span>
+                <ul id="dropright">
+                    <li>
+                        <i class="icon-enlarge"></i>
+                        <span>美食</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            1
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-images"></i>
+                        <span>外卖</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            2
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-image"></i>
+                        <span>美食</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            3
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-sleepy"></i>
+                        <span>酒店</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            4
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-sleepy2"></i>
+                        <span>民宿</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            5
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-camera"></i>
+                        <span>猫眼电影</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            6
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-podcast"></i>
+                        <span>机票 / 火车票</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            7
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-man"></i>
+                        <span>休闲娱乐 / KTV</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            8
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-woman"></i>
+                        <span>生活服务</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            9
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-evil2"></i>
+                        <span>丽人 / 美发 / 医学美容</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            10
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-shocked"></i>
+                        <span>结婚 / 婚纱摄影 / 婚宴</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            11
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-shocked2"></i>
+                        <span>亲子 / 儿童乐园 / 幼教</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                        12
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-baffled"></i>
+                        <span>运动健身 / 健身中心</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            13
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-baffled2"></i>
+                        <span>家装 / 建材 / 家居</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            14
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-confused"></i>
+                        <span>学习培训 / 音乐培训</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            15
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-confused2"></i>
+                        <span>医疗健康 / 宠物 / 爱车</span>
+                        <b>></b>
+                        <div class="allsort displaynone">
+                            16
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-wondering2"></i>
+                        <span>酒吧 / 密室逃脱</span>
+                        <b>></b>
+                         <div class="allsort displaynone">
+                            17
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 轮播区域 -->
+            
+            <div class="bodyer-center-center">
+                <div class="bodyer-center-center-top">
+                    <a href="">美团外卖</a>
+                    <a href="">猫眼电影</a>
+                    <a href="">美团酒店</a>
+                    <a href="">民宿公寓/</a>
+                    <a href="">商家入驻</a>
+                    <a href="">美团公益</a>
+                </div>
+                <div class="bodyer-center-center-bottom">
+                <!-- 轮播图 -->
+                <div id="carousel">
+                    <a href="" id="links">
+                        <img src="" alt="" id="image">
+                    </a>
+                    <div id="left">
+                        &lt;
+                    </div>
+                    <div id="right">
+                        &gt;
+                    </div>
+                    <div id="number">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <!-- <li>6</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="leisure">
+                    
+                </div>
+                <div class="hotel">
+
+                </div>
+                <div class="topover">
+
+                </div>
+                <div class="shopping">
+                    
+                </div>
+                </div>
+            </div>
+            <!-- 登录和注册 -->
+            <div class="bodyer-center-right">
+                <div class="bodyer-center-right-top">
+                    <div></div>
+                    <p>
+                        Hi!你好
+                    </p>
+                    <div>
+                        注册
+                    </div>
+                    <div>
+                        立即登录
+                    </div>
+                </div>
+                <!-- 二维码和介绍 -->
+                <div class="bodyer-center-right-bottom">
+                    <div>
+                    </div>
+                    <p>美团APP手机版</p>
+                     <span>一元起</span>
+                     <b>吃喝玩乐</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 猫眼电影 -->
+    <div class="movie">
+        <div class="movie-center">
+            <!-- 电影介绍 -->
+            <div class="movie-center-top">
+                <span>猫眼电影</span>
+                <span>正在热映</span>
+                <span>即将上映</span>
+                <span>全部&gt;</span>
+            </div>
+            <!-- 电影列表 -->
+            <div class="movie-center-bottom">
+                <div>
+                    <a href="#">
+                        <img src="./images/dianying1.jpg" alt="电影">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/dianying2.jpg" alt="电影">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/dianying3.jpg" alt="电影">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/dianying4.jpg" alt="电影">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/dianying5.jpg" alt="电影">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 推荐民宿 -->
+    <div class="hotel">
+        <div class="hotel-center">
+            <!-- 民宿列表 -->
+            <div class="hotel-center-top">
+                <span>推荐民宿</span>
+                <span>天津</span>
+                <span>济南</span>
+                <span>大连</span>
+                <span>石家庄</span>
+                <span>秦皇岛</span>
+                <span>呼和浩特</span>
+                <span>全部&gt;</span>
+            </div>
+            <!-- 民宿详情 -->
+            <div class="hotel-center-bottom">
+                <div>
+                    <a href="#">
+                        <img src="./images/minsu1.jpg" alt="电影">
+                    </a>
+                    <span>【青果美宿】青奢/100寸投影/古文化街/鼓楼</span>
+                    <p>
+                        整套1居室·可住2人 | 天津站/古文化街/意式风情街                    </p>
+                    <b>
+                        &yen;148
+                    </b>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/minsu2.jpg" alt="电影">
+                    </a>
+                    <span>芦台镇短租小时公寓民宿</span>
+                    <p>
+                        整套1居室·可住2人 | 宁河地区七里海国家湿地公园景区
+                    </p>
+                    <b>
+                        &yen;138
+                    </b>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/minsu3.jpg" alt="电影">
+                    </a>
+                    <span>【青涵美宿】清馨/天津120寸投影观影/天津之眼/海河游船/鼓楼/古文化街</span>
+                    <p>
+                        整套1居室·可住2人 | 长虹公园/天津西站
+                    </p>
+                    <b>
+                        &yen;189
+                    </b>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/minsu4.jpg" alt="电影">
+                    </a>
+                    <span>［青绦］初心民宿.地暖.火锅—古风拍照/榻榻米/补光灯/天猫魔屏投影/近火车站万达银座大润发</span>
+                    <p>
+                        整套1居室·可住2人 | 泰山山下
+                    </p>
+                    <b>
+                        &yen;159
+                    </b>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/minsu5.jpg" alt="电影">
+                    </a>
+                    <span>【宿颜暖居•等风来】北欧轻奢|室内星空|泰山脚下|法式拱门|投影|高铁5分钟红门20分钟万达15分钟近老街西湖大学城</span>
+                    <p>
+                        整套1居室·可住2人 | 泰山山下
+                    </p>
+                    <b>
+                        &yen;180
+                    </b>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/minsu6.jpg" alt="电影">
+                    </a>
+                    <span>泾蓝溪山公寓 格调大床、近方特水上乐园、万达广场、新时代超市、距离高铁15分钟</span>
+                    <p>
+                        整套1居室·可住2人 | 泰山山下
+                    </p>
+                    <b>
+                        &yen;85
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 猜你喜欢 -->
+    <div class="like">
+        <div class="like-center">
+            <!-- 猜你喜欢的顶部 -->
+            <div class="like-center-top">
+                <span>猜你喜欢</span>
+                <span>为你甄选最合适的</span>
+            </div>
+            <!-- 猜你喜欢的列表 -->
+            <div class="like-center-bottom">
+                <div class="list">
+                    <img src="./images/cainixihuan1.jpg" alt="美食">
+                    <div>芦月轩羊蝎子（杨闸店）</div>
+                    <div></div>
+                    <div>管庄</div>
+                    <div>&yen;47.5起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan2.jpg" alt="美食">
+                    <div>东方名剪（永泰店）</div>
+                    <div></div>
+                    <div>清河</div>
+                    <div>&yen;41.88起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan3.jpg" alt="美食">
+                    <div>晓寿司·日本料理（鲁谷店）</div>
+                    <div></div>
+                    <div>鲁谷</div>
+                    <div>&yen;47.5起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan4.jpg" alt="美食">
+                    <div>京八珍（积水潭店）</div>
+                    <div></div>
+                    <div>新街口</div>
+                    <div>&yen;43.6起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan5.jpg" alt="美食">
+                    <div>分米鸡（喜隆多店）</div>
+                    <div></div>
+                    <div>苹果园</div>
+                    <div>&yen;63.0起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan6.jpg" alt="美食">
+                    <div>汉斯特自助烤肉（良乡店）</div>
+                    <div></div>
+                    <div>良乡</div>
+                    <div>&yen;61.98起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan7.jpg" alt="美食">
+                    <div>蝎王府羊蝎子（北大地店）</div>
+                    <div></div>
+                    <div>北大地</div>
+                    <div>&yen;12.0起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan8.jpg" alt="美食">
+                    <div>欢乐口腔正畸（知春路分院）</div>
+                    <div></div>
+                    <div>知春路</div>
+                    <div>&yen;69.0起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan9.jpg" alt="美食">
+                    <div>巴蜀王婆大虾（林肯公园店）</div>
+                    <div></div>
+                    <div>亦庄</div>
+                    <div>&yen;1.98起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan10.jpg" alt="美食">
+                    <div>宽板凳老灶火锅（密云店）</div>
+                    <div></div>
+                    <div>金地来</div>
+                    <div>&yen;89.9起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan11.jpg" alt="美食">
+                    <div>今雨轩烤肉自助餐（扑满山店）</div>
+                    <div></div>
+                    <div>宋家庄</div>
+                    <div>&yen;45.5起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan12.jpg" alt="美食">
+                    <div>北京炸酱面馆（前门总店）</div>
+                    <div></div>
+                    <div>前门</div>
+                    <div>&yen;39.0起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan13.jpg" alt="美食">
+                    <div>华莱士炸鸡汉堡（石油大学店）</div>
+                    <div></div>
+                    <div>昌平镇</div>
+                    <div>&yen;10.9起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan14.jpg" alt="美食">
+                    <div>味多美蛋糕（紫金数码店）</div>
+                    <div></div>
+                    <div>双榆树</div>
+                    <div>&yen;1.0起</div>
+                </div>
+                <div class="list">
+                    <img src="./images/cainixihuan15.jpg" alt="美食">
+                    <div>好伦哥（八里桥店）</div>
+                    <div></div>
+                    <div>通州北苑</div>
+                    <div>&yen;9.9起</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 副导航 -->
+    <div class="navbar">
+        <div class="navbar-center">
+           <div class="navbar-center-top">
+               美团导航
+           </div> 
+           <div class="navbar-center-bottom">
+                <div class="hotcity">
+                    热门城市
+                </div>
+                <div class="city">
+                    <ul>
+                        <li>北京</li>
+                        <li>长沙</li>
+                        <li>南京</li>
+                        <li>石家庄</li>
+                        <li>济南</li>
+                        <li>南宁</li>
+                        <li>天津</li>
+                        <li>昆明</li>
+                        <li>佛山</li>
+                        <li>合肥</li>
+                        <li>武汉</li>
+                        <li>福州</li>
+                        <li>宁波</li>
+                        <li>成都</li>
+                        <li>东莞</li>
+                        <li>贵阳</li>
+                        <li>太原</li>
+                        <li>青岛</li>
+                        <li>沈阳</li>
+                        <li>长春</li>
+                    </ul>
+                </div>
+                <div class="hotcity">
+                    热门分类
+                </div>
+                <div class="city">
+                    <ul>
+                        <li>酒店</li>
+                        <li>美食</li>
+                        <li>休闲娱乐</li>
+                        <li>运动健身</li>
+                        <li>生活服务</li>
+                        <li>上门服务</li>
+                        <li>购物</li>
+                        <li>时尚购</li>
+                        <li>本地购物</li>
+                        <li>结婚</li>
+                        <li>摄影写真</li>
+                        <li>宴会</li>
+                        <li>丽人</li>
+                        <li>母婴亲子</li>
+                        <li>学习培训</li>
+                        <li>家装</li>
+                        <li>汽车服务</li>
+                        <li>医疗</li>
+                        <li>宠物</li>
+                        
+                    </ul>
+                </div>
+                <div class="hotcity">
+                    周边热门
+                </div>
+                <div class="city">
+                    <ul>
+                        <li>廊坊汽车</li>
+                        <li>廊坊医疗</li>
+                        <li>门头宠物</li>
+                        <li>廊坊宴会</li>
+                        <li>廊坊酒店</li>
+                        <li>廊坊生活</li>
+                        <li>佛山美食</li>
+                        <li>南沙丽人</li>
+                        <li>佛山酒店</li>
+                        <li>佛山医疗</li>
+                        <li>顺德购物</li>
+                        <li>南沙结婚</li>
+                        <li>顺德宴会</li>
+                        <li>南沙家装</li>
+                        <li>江津酒店</li>
+                        <li>璧山家装</li>
+                        <li>璧山美食</li>
+                        <li>江津结婚</li>
+                        <li>北碚丽人</li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- 底部链接 -->
+    <div class="footer">
+        <div class="footer-center">
+            <div class="footer-center-content">
+                <ul>
+                    <b>用户帮助</b>
+                    <li>申请退款</li>
+                    <li>常见问题</li>
+                    <li>用户协议</li>
+                    <li>隐私政策</li>
+                    <li>反诈骗公告</li>
+                    <li>消费者权益保障</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>商家合作</b>
+                    <li>美团商家入驻</li>
+                    <li>美团外卖开店</li>
+                    <li>美团餐饮系统</li>
+                    <li>美团配送</li>
+                    <li>酒店入驻</li>
+                    <li>商家开票申请</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>合作商招募</b>
+                    <li>美团外卖合作</li>
+                    <li>美团联盟</li>
+                    <li>美团买菜</li>
+                    <li>美团收银</li>
+                    <li>美团综合业务</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>关注美团</b>
+                    <li>美团新浪微博</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>消费者服务热线</b>
+                    <li>外卖消费者：10109777</li>
+                    <li>猫眼消费者：10105335</li>
+                    <li>其他消费者：10107888</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>美团服务</b>
+                    <li>美团外卖</li>
+                    <li>美团酒店</li>
+                    <li>猫眼电影</li>
+                    <li>美团配送</li>
+                    <li>大众点评</li>
+                    <li>无人配送</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>美团规则</b>
+                    <li>规则中心</li>
+                    <li>规则目录</li>
+                    <li>规则评议院</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>公司信息</b>
+                    <li>关于我们</li>
+                    <li>投资者关系</li>
+                    <li>加入我们</li>
+                    <li>商户诚信公约及管理方法</li>
+                    <li>保险经纪资质</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>廉正举报</b>
+                    <li>廉正举报平台</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>知识产权</b>
+                    <li>知识产权维护平台</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 关于网站的介绍 -->
+    <div class="info">
+        <div class="info-center">
+            本网站是学习使用
+        </div>
+    </div>
+</body>
+</html>

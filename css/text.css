@@ -1,0 +1,117 @@
+/* 头部导航 */
+.nav{
+    width: 100%;
+    height: 40px;
+    
+}
+.nav-center{
+    width: 1190px;
+    height: 40px;
+    margin: 0 auto;
+}
+/* 导航栏左侧 位置登录注册 */
+.nav-center-left {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    float: left;
+}
+.nav-center-left a:nth-child(2){
+    color: #000;
+}
+.nav-center-left a:nth-child(3){
+    border: 1px solid #e5e5e5;
+    color: #000;
+}
+.nav-center-left a:nth-child(5){
+    color: #fe8c00;
+    padding:0px 15px;
+}
+.nav-center-left a:hover{
+    color: #fe8c00;
+}
+/* 导航条右侧 我的美团、手机APP 商家中心、美团规则、网站导航 */
+.nav-center-right {
+    width: 460px;
+    height: 40px;
+    float: right;
+    line-height: 40px;
+    font-size: 12px;
+    position: relative;
+    /* background-color: pink; */
+}
+.nav-center-right a{
+    padding: 0 20px;
+}
+.nav-center-right a:hover{
+    color: #fe8c00;
+}
+/* 下拉菜单 */
+#dropdown li a{
+    width: 50px;
+    height: 40px;
+    /* background-color: green; */
+    float: right;
+    display: block;
+    text-align: center;
+}
+#dropdown li a:hover{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    color: #fe8c00;
+}
+#dropdown li dl{
+    width: 50px;
+    height: 160px;
+    /* background-color: red; */
+    /* display: block; */
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+}
+#dropdown li dl dd a:hover{
+    border: none;
+    color: #fe8c00;
+}
+/* 下拉框隐藏 */
+.displaynone{
+    display: none;
+}
+/* 下拉显示 */
+#dropdown .show .displaynone{
+    display: block;
+}
+#dropdown .show:hover{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    color: #fe8c00;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+#dropdown .show a:hover{
+    color: #fe8c00;
+}
+#dropright{
+    position: relative;
+}
+#dropright li .allsort{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 228px;
+}
+#dropright .show .allsort{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 228px;
+    display: block;
+}
+
